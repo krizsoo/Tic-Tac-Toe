@@ -1,0 +1,110 @@
+$background: #269E9E;
+$background-hover: #E76C07;
+$text: #FFE4CD;
+$button: #E76C07;
+$button-hover: #FFC494;
+
+body {
+  background-color: #333;
+}
+.grid {
+  background-color: $background;
+  border: #333 3px solid;
+  max-width: 290px;
+  height: 290px;
+  margin: auto;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+.square {
+  background-color: $background;
+  border: #333 3px solid;
+  width: 33.333% ;
+  height: 33.333%;
+  float: left;
+  color: $text; 
+  text-align: center;
+  font-size: 2em;
+  font-family: arial; 
+}
+.square:hover  {
+  background-color: $background-hover;
+}
+.square:focus {
+ background-color: $background-hover;
+} 
+
+#controls {
+  background-color: $background;
+  color: $text;
+  --max-width: 590px;
+  margin: auto;
+  margin-top:-15px;
+  padding: 30px;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+}
+.switch {
+  width: 100%;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+.playermode {
+  width:100%;
+}
+.alert {
+  background-color: $button;
+  position: relative;
+  top: -200px;
+  width: 200px;
+  margin: auto;
+  opacity: 0;
+  z-index: -1;
+}
+.alert-text {
+  color: $text;
+  text-align: center;
+}
+.btn {
+  background-color: $button;
+  border: $button;
+}
+.ok {
+  top: -25px;
+  margin: auto; 
+  display: block;
+}
+.settings {
+  position: relative;
+  left: 42%;
+  top: 10px;
+  z-index: 3;
+}
+
+.btn:hover {
+  background-color: $button-hover;
+  
+}
+
+@media screen and (min-width: 960px) {
+  .grid {
+    max-width: 600px;
+    height: 600px;
+    
+  }
+  .square {
+    font-size: 5em;
+  }
+  #controls {
+    max-width: 600px; 
+  }
+  .alert {
+    top:-300px;
+    width: 400px;
+  }
+  .settings {
+    font-size: 1.5em;
+    left: 45%;
+  }
+
+}
